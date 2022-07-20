@@ -22,7 +22,8 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 
 ## Basic use to create Todo
 ![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/To%20create%20%20Todo.jpg)
-
+## After finish a Todo List
+![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/HomePage.png)
 # What's left 
 1. Add images to the list
 2. Add sound effects when completing a list
