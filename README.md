@@ -19,6 +19,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 7. Includes the function of recycling bins in "More"(To be continued)
 8. Added app sharing and feedback functions in "More"
 9. The data will be stored locally, it could be private
+10. The button and color we used is from https://github.com/dmytrodanylyk/shadow-layout
 
 ## Basic use to create Todo
 ![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/To%20create%20%20Todo.jpg)
