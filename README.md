@@ -21,9 +21,8 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 5. When an item in the list is completed, you can click ⭕ on the left to indicate completion, and click again to cancel
 6. In the homepage, you can see the completion of each list. When all tips in a list are complete, green "√" is displayed. If the deadline is exceeded, a red "!" will appear.
 7. Includes the function of recycling bins in "More"(To be continued)
-8. Added app sharing and feedback functions in "More"
-9. The data will be stored locally, it could be private
-10. The button and color we used is from https://github.com/dmytrodanylyk/shadow-layout
+8. The data will be stored locally, it could be private
+9. The button and color we used is from https://github.com/dmytrodanylyk/shadow-layout
 
 ## Basic use to create Todo
 ![](/pictures/TocreateTodo.jpg)
@@ -31,10 +30,20 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 ![](/pictures/HomePage.jpg)
 
 # What's left 
-1. Recycle bin for user that have chances to undo the deletion
+1. Recycle bin in "More" page for user that have chances to undo the deletion
 2. On the Home page, tap and hold the list to confirm the deletion
 3. For each event, tap and hold the list to confirm the deletion
+4. Search function 🔍 on the right tab of the homepage, we will continue to implement this function that for searching the list with out entire list name
+5. FeedBack in "More" page will be used to link to email 
+6. Share app in "More" page will be used to share this app's apk 
+7. About WooHoo app in "More" page will be used to show the version of this app 
 
-# FeedBack
-If the app does not run as expected or stops running several times, please use the "problem feedback" function in the app to give feedback or submit an issue in this project.
+# Contributor
+Weilong Xu
+Handa Huang
+Junchen Li
+Siwei Wang
+Haojie Huang
+
+
 
