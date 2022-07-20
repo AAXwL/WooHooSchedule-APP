@@ -21,7 +21,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 9. The data will be stored locally
 
 ## Basic use to create Todo
-https://github.com/AAXwL/WooHooSchedule-APP/blob/main/To%20create%20%20Todo.jpg
+![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/To%20create%20%20Todo.jpg)
 
 # What's left 
 1. Add images to the list
