@@ -9,6 +9,8 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 5. Data visualization (deadline date, #of completed and rest, )
 6. Free app without any advertisements and costs!
 
+# MVVM diagram
+
 # What we did 
 1. Create an initialized Schedule List
 2. Create a title and deadline when add a list
