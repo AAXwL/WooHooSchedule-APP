@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WooHooSchedule</string>
+    <string name="app_name_cn">WooHooSchedule</string>
+    <string name="title_home">Home Page</string>
+    <string name="title_setting">More</string>
+    <string name="NaN">NaNNaNNaN</string>
+    <string name="add_list">Create List</string>
+    <string name="update_list">Modify List</string>
+    <string name="addplaceholder">List Name</string>
+    <string name="dateplaceholder">Due Date</string>
+    <string name="abouttitle">About WooHoo Schedule</string>
+    <string name="version">Version 1.0</string>
+    <string name="setting_masterplate">Template Manager</string>
+    <string name="setting_archive">Achieved</string>
+    <string name="setting_trash">Recycle Bin</string>
+    <string name="setting_backup"> Backup and Restore</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_share">Share this App</string>
+    <string name="setting_about">About WooHoo Schedule</string>
+    <string name="clear_trash">Empty Recycle Bin</string>
+    <string name="clicktoadd">Click to add</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_foot">No More list</string>
+</resources>

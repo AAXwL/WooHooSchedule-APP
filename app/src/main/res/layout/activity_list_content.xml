@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListContent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="151dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="backviewonClick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="12dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_back_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/classicalBlue"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/listtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/NaN"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/classicalBlue"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/btn_MoveToTrash"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:padding="4dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_btn_trash_21"
+            android:background="@drawable/icon_selector"
+            app:layout_constraintBottom_toBottomOf="@id/titletext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/titletext"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/trash"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/btn_MoveToArchive"
+            android:layout_marginEnd="16dp"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:padding="4dp"
+            android:background="@drawable/icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_btn_archive_21"
+            app:layout_constraintBottom_toBottomOf="@id/titletext"
+            app:layout_constraintEnd_toStartOf="@id/btn_MoveToTrash"
+            app:layout_constraintTop_toTopOf="@id/titletext"
+            app:tint="@color/archive"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/btn_updateList"
+            android:layout_marginEnd="16dp"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:padding="4dp"
+            android:background="@drawable/icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_btn_update_21"
+            app:layout_constraintBottom_toBottomOf="@id/titletext"
+            app:layout_constraintEnd_toStartOf="@id/btn_MoveToArchive"
+            app:layout_constraintTop_toTopOf="@id/titletext"
+            app:tint="@color/recover"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

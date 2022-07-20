@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="classicalBlue">#0F4C81</color>
+    <color name="textColor">#454545</color>
+    <color name="EC">#ECECEC</color>
+    <color name="E">#EEEEEE</color>
+    <color name="trash">#FF2D55</color>
+    <color name="archive">#FF9500</color>
+    <color name="recover">#0084FF</color>
+    <color name="grey117">#757575</color>
+    <color name="green">#32d74b</color>
+</resources>

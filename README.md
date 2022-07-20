@@ -10,7 +10,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 6. Free app without any advertisements and costs!
 
 # MVVM diagram
-<img src="https://github.com/AAXwL/WooHooSchedule-APP/blob/main/MVVM.png" width="500px" hight= "750px">
+<img src="./pictures/MVVM.png" width="500px" hight= "750px"/>
 
 
 # What we did 
@@ -26,9 +26,9 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 10. The button and color we used is from https://github.com/dmytrodanylyk/shadow-layout
 
 ## Basic use to create Todo
-![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/To%20create%20%20Todo.jpg)
+![](/pictures/TocreateTodo.jpg)
 ## Three cases of the Todo list show in homepage
-![](https://github.com/AAXwL/WooHooSchedule-APP/blob/main/HomePage.jpg)
+![](/pictures/HomePage.jpg)
 
 # What's left 
 1. Recycle bin for user that have chances to undo the deletion
