@@ -10,7 +10,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 6. Free app without any advertisements and costs!
 
 # MVVM diagram
-<img src="https://github.com/AAXwL/WooHooSchedule-APP/blob/main/MVVM.png" width="100px" hight= "200px">
+<img src="https://github.com/AAXwL/WooHooSchedule-APP/blob/main/MVVM.png" width="2000px" hight= "3000px">
 
 
 # What we did 
