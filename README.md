@@ -39,11 +39,11 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 7. About WooHoo app in "More" page will be used to show the version of this app 
 
 # Contributor
-Weilong Xu
-Handa Huang
-Junchen Li
-Siwei Wang
-Haojie Huang
+1. Weilong Xu
+2. Handa Huang
+3. Junchen Li
+4. Siwei Wang
+5. Haojie Huang
 
 
 
