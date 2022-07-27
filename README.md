@@ -35,8 +35,8 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy to us
 3. For each event, tap and hold the list to confirm the deletion
 4. Search function 🔍 on the right tab of the homepage; we will continue to implement this function for searching the list without the entire list name
 5. Users will use FeedBack on the "More" page to link to email 
-6. Users will use the share app on the "More" page to share this app's apk 
-7. Users will use about WooHoo app in the "More" page to show the version of this app 
+6. User can click share button to share app’s apk on the “More” page.
+7. User can shows the different version about WooHoo app on the “More” page.
 
 ###  Contributor
 1. Weilong Xu
