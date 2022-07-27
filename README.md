@@ -6,7 +6,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 2. Track scheduled events 
 3. Visual completion (Completion for todo list)
 4. A solid base for adding creative extensions
-5. Data visualization (deadline date, #of completed and rest,)
+5. Data visualization (deadline date, #of completed and rest)
 6. Free app without any advertisements and costs!
 
 # MVVM diagram
@@ -19,7 +19,7 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy app f
 3. Can add any number of events to the list
 4. Can delete list and achieve (Here delete is not delete directly, but to the recycle bin, and the recycle bin has not finished)
 5. When an item in the list is completed, you can click ⭕ on the left to indicate completion, and click again to cancel
-6. In the homepage, you can see the completion of each list. When all tips in a list are complete, green "√" is displayed. If the deadline is exceeded, a red "!" will appear.
+6. In the homepage, you can see the completion of each list. When all tips in a list are complete, green "√" is displayed. If the deadline is exceeded, a red "!" will appear
 7. Includes the function of recycling bins in "More"(To be continued)
 8. The data will be stored locally, it could be private
 9. The button and color we used is from https://github.com/dmytrodanylyk/shadow-layout
