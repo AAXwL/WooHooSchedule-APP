@@ -108,18 +108,25 @@ class MyDatabaseDAO(context: Context) {
                     if (ddl > todayTimeStamp) { //Return the remaining days without expiration
                         val diff = ddl - todayTimeStamp
                         val days = diff / (60 * 60 * 24)
-                        ExtraString = days.toString() + "left"
-                    } else if (ddl == todayTimeStamp) { //当天 返回"今天"
+                        if (days > 1)
+                        {
+                            ExtraString = "and $days days left"
+                        }
+                        else
+                        {
+                            ExtraString = "and $days day left"
+                        }
+                    } else if (ddl == todayTimeStamp) {
                         ExtraString = "Today"
                     } else { //Expired return a different picture, not yet
                         val diff = todayTimeStamp - ddl
                         val days = diff / (60 * 60 * 24)
-                        ExtraString = "Has expired" + days + "days"
+                        ExtraString = "and has expired $days days"
                         ddlstatus = 1
                     }
                     //End of the time
                 } else {
-                    ExtraString = "Done"
+                    ExtraString = "and Done"
                 }
                 map["ddl"] = ddlstatus
                 map["isFinish"] = isFinish

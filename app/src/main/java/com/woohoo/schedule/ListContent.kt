@@ -9,11 +9,15 @@ import android.view.inputmethod.EditorInfo
 import android.view.MotionEvent
 import com.woohoo.schedule.CommonDialog.OnClickBottomListener
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
+import androidx.core.app.ActivityCompat
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -29,6 +33,8 @@ class ListContent : AppCompatActivity() {
     private var addcontent: EditText? = null
     private var title: TextView? = null
     private var info: TextView? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_content)

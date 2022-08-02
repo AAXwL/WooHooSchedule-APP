@@ -12,6 +12,8 @@ WooHooSchedule APP for the SFU-CMPT362 Group Project, this is a super easy to us
 # MVVM diagram
 <img src="./pictures/MVVM.png" width="500px" hight= "750px"/>
 
+# Thread diagram
+<img src="./pictures/Thread.png" width="500px" hight= "750px"/>
 
 # What we did 
 1. Create an initialized Schedule List

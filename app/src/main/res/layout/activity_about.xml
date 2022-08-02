@@ -87,6 +87,7 @@
             app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
         <TextView
+            android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -96,6 +97,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Weilong Xu\nHaojie Huang\nJunchen Li\nHaojie Huang\nSiwei Wang"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/version"
+            app:layout_constraintTop_toBottomOf="@id/version" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

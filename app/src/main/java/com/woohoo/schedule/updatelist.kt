@@ -6,6 +6,7 @@ import android.widget.TextView.OnEditorActionListener
 import android.view.inputmethod.EditorInfo
 import android.app.DatePickerDialog
 import android.content.Context
+import android.media.MediaPlayer
 import android.view.*
 import android.widget.*
 import java.text.ParseException
@@ -59,6 +60,7 @@ class updatelist : AppCompatActivity() {
             }
             false
         })
+
         listDatePicker!!.setOnClickListener(View.OnClickListener {
             listName = listNameInput!!.getText().toString().trim { it <= ' ' }
             //确保list名字不为空
@@ -88,6 +90,7 @@ class updatelist : AppCompatActivity() {
                 listDatePicker!!.text = listDate
                 //数据库操作
                 db!!.updateListNamedate(listId, listName, timestamp)
+                makesound()
                 finish()
                 overridePendingTransition(R.anim.no_anim, R.anim.trans_out)
             },
@@ -109,5 +112,30 @@ class updatelist : AppCompatActivity() {
             overridePendingTransition(R.anim.no_anim, R.anim.trans_out)
         }
         return super.onKeyUp(keyCode, event)
+    }
+
+    private fun makesound()
+    {
+        object: Thread()
+        {
+            override fun run()
+            {
+                super.run()
+                val mediaPlayer = MediaPlayer.create(this@updatelist, R.raw.confirmed)
+                sleep(500)
+                var isStopThread = false
+                while (true)
+                {
+                    if (isStopThread)
+                    {
+                        mediaPlayer?.stop()
+                        break
+                    }
+                    mediaPlayer?.start()
+                    sleep(1200)
+                    isStopThread = true
+                }
+            }
+        }.start()
     }
 }

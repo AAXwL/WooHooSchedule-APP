@@ -1,13 +1,24 @@
 package com.woohoo.schedule
 
+import android.Manifest
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.media.MediaPlayer
+import android.os.Build
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import android.widget.*
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.navigation.Navigation
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity()
 {
@@ -15,6 +26,28 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        object: Thread()
+        {
+            override fun run()
+            {
+                super.run()
+                val mediaPlayer = MediaPlayer.create(this@MainActivity, R.raw.sound)
+                sleep(500)
+                var isStopThread = false
+                while (true)
+                {
+                    if (isStopThread)
+                    {
+                        mediaPlayer?.stop()
+                        break
+                    }
+                    mediaPlayer?.start()
+                    sleep(3000)
+                    isStopThread = true
+                }
+            }
+        }.start()
 
         //Bottom navigation bar
         val navView = findViewById<BottomNavigationView>(R.id.nav_view)

@@ -12,6 +12,7 @@ import android.app.DatePickerDialog
 import android.content.Context
 import android.widget.DatePicker
 import android.content.Intent
+import android.media.MediaPlayer
 import android.view.KeyEvent
 import android.view.View
 import java.text.ParseException
@@ -85,6 +86,7 @@ class AddListActivity : AppCompatActivity() {
                 intent.putExtra("listid", rowid.toString())
                 startActivity(intent)
                 overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
+                makesound()
                 finish()
             },
             calendar!![Calendar.YEAR],
@@ -104,5 +106,30 @@ class AddListActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.no_anim, R.anim.trans_out)
         }
         return super.onKeyUp(keyCode, event)
+    }
+
+    private fun makesound()
+    {
+        object: Thread()
+        {
+            override fun run()
+            {
+                super.run()
+                val mediaPlayer = MediaPlayer.create(this@AddListActivity, R.raw.confirmed)
+                sleep(500)
+                var isStopThread = false
+                while (true)
+                {
+                    if (isStopThread)
+                    {
+                        mediaPlayer?.stop()
+                        break
+                    }
+                    mediaPlayer?.start()
+                    sleep(1200)
+                    isStopThread = true
+                }
+            }
+        }.start()
     }
 }

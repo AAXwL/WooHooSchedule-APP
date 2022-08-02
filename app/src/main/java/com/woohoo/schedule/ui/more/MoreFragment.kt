@@ -27,13 +27,13 @@ class MoreFragment : Fragment()
         bt_about.setOnClickListener { view: View? ->
             val intent = Intent()
             intent.setClass(requireActivity(), about::class.java) //RequireActivity is the current Activty and class is preceded by the name of the activity to jump to
-            //startActivity(intent)
+            startActivity(intent)
             requireActivity().overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
         }
         bt_trash.setOnClickListener { view: View? ->
             val intent = Intent()
             intent.setClass(requireActivity(), trash::class.java)
-            //startActivity(intent)
+            startActivity(intent)
             requireActivity().overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
         }
         bt_archive.setOnClickListener { view: View? ->
@@ -49,9 +49,9 @@ class MoreFragment : Fragment()
             intent.putExtra(Intent.EXTRA_EMAIL, email)
             intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback:WooHoo Schedule Feedback") // theme
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            //startActivity(Intent.createChooser(intent, "Please select the Mail application"))
+            startActivity(Intent.createChooser(intent, "Please select the Mail application"))
         }
-        //bt_share.setOnClickListener { view: View? -> shareText(activity, "WooHoo Schedule") }
+        bt_share.setOnClickListener { view: View? -> shareText(activity, "WooHoo Schedule") }
         return root
     }
 
