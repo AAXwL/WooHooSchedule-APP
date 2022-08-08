@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        checkPermissions(this)
+
         object: Thread()
         {
             override fun run()
@@ -63,6 +65,21 @@ class MainActivity : AppCompatActivity()
             val intent = Intent(this, AddListActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
+        }
+    }
+
+    fun checkPermissions(activity: Activity?)
+    {
+        if (Build.VERSION.SDK_INT < 23) return
+        if (ContextCompat.checkSelfPermission(activity!!, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+            || ContextCompat.checkSelfPermission(activity!!, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED
+            || ContextCompat.checkSelfPermission(activity!!, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED)
+        {
+            val request = arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_EXTERNAL_STORAGE)
+
+            ActivityCompat.requestPermissions(activity, request, 0)
         }
     }
 }

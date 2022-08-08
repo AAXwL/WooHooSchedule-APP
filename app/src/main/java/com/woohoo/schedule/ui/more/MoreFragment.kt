@@ -4,15 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.os.Bundle
-import com.woohoo.schedule.R
 import android.content.Intent
 import android.net.Uri
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
-import com.woohoo.schedule.about
-import com.woohoo.schedule.trash
-import com.woohoo.schedule.archive
+import com.woohoo.schedule.*
 
 class MoreFragment : Fragment()
 {
@@ -24,6 +21,15 @@ class MoreFragment : Fragment()
         val bt_archive = root.findViewById<ConstraintLayout>(R.id.btn_Archive)
         val bt_feedback = root.findViewById<ConstraintLayout>(R.id.constraintLayout3_1)
         val bt_share = root.findViewById<ConstraintLayout>(R.id.btn_share)
+        val bt_profile = root.findViewById<ConstraintLayout>(R.id.uer_profil)
+
+        bt_profile.setOnClickListener { view: View? ->
+            val intent = Intent()
+            intent.setClass(requireActivity(), Profile::class.java)
+            startActivity(intent)
+            requireActivity().overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
+        }
+
         bt_about.setOnClickListener { view: View? ->
             val intent = Intent()
             intent.setClass(requireActivity(), about::class.java) //RequireActivity is the current Activty and class is preceded by the name of the activity to jump to

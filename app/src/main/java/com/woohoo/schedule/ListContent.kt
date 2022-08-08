@@ -45,7 +45,6 @@ class ListContent : AppCompatActivity() {
         //Query the list name from the database with listid and set it to title. There is one or only one ID
         title = findViewById(R.id.listtitle)
 
-
         //Listen for recycle bin and archive buttons
         findViewById<View>(R.id.btn_MoveToTrash).setOnClickListener { view: View -> onClick(view) }
         findViewById<View>(R.id.btn_MoveToArchive).setOnClickListener { view: View -> onClick(view) }

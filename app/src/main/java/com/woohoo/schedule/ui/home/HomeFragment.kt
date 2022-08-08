@@ -84,8 +84,7 @@ class HomeFragment : Fragment()
         bt_search.setOnClickListener { v: View? ->
             val intent = Intent()
             intent.setClass(requireActivity(), search::class.java)
-            //TODO 按键
-            //startActivity(intent)
+            startActivity(intent)
             requireActivity().overridePendingTransition(R.anim.trans_in, R.anim.no_anim)
         }
         return root
